@@ -1,0 +1,26 @@
+body {
+  padding: 0 30px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #000000fe;
+  text-align: right;
+}
+
+h1, h2, h3 {
+    font-family: sans-serif;
+    color: #99d6ff;
+}
+
+em {
+    color: #007acc;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}

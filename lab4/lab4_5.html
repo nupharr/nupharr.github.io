@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление вертикального меню</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .menu {
+            width: 300px;
+            background: #99d6ff;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .menu li {
+            color: rgb(0, 0, 0);
+            position: relative;
+        }
+
+        .menu li ul {
+            display: none;
+            left: 40px;
+            background: #007acc;
+            min-width: 200px;
+        }
+
+        .menu li:hover ul {
+            display: block;
+            padding: 0 15px;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 8px 15px;
+            color: inherit;
+
+        }
+
+        .menu li a::before {
+            font-family: 'Font Awesome 6 Free';
+            font-size: 16px;
+            width: 20px;
+            display: inline-block;
+        }
+
+        .menu li a::before {
+            content: "\f0fe";
+        }
+
+        .menu>ul>li>a:hover::before {
+            content: "\f147";
+        }
+
+        .menu li li a::before {
+            content: "\f192";
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Фильмы</a>
+                <ul>
+                    <li><a href="#">Экшен</a></li>
+                    <li><a href="#">Мелодрамы</a></li>
+                    <li><a href="#">Сериалы</a></li>
+                    <li><a href="#">Семейные</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Музыка</a>
+                <ul>
+                    <li><a href="#">Классика</a></li>
+                    <li><a href="#">Джаз</a></li>
+                    <li><a href="#">Рок</a></li>
+                    <li><a href="#">Гранж</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Софт</a>
+                <ul>
+                    <li><a href="#">Графика</a></li>
+                    <li><a href="#">3D-моделирование</a></li>
+                    <li><a href="#">Машинопись</a></li>
+                    <li><a href="#">Переводчики</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Игры</a>
+                <ul>
+                    <li><a href="#">РПГ</a></li>
+                    <li><a href="#">Шутеры</a></li>
+                    <li><a href="#">Пасьянс</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>

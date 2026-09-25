@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Встраиваемый контент - Полный пример</title>
+    <style>
+
+        .tag {
+         color: navy;
+            font-weight: 500;
+            background-color: #f0f0f0;
+            padding: 0 2px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        .attribute {
+            color: #e6550d;
+            font-family: monospace;
+            background-color: #fef0e5;
+            padding: 0 2px;
+            border-radius: 4px;
+        }
+
+        .demo-block h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+
+        figcaption {
+            font-style: italic;
+            color: #555;
+            text-align: center;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        figure {
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        iframe, object, video, audio {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .fallback-link {
+            display: inline-block;
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 0.75rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            border: 1px solid #f5c6cb;
+            transition: 0.2s;
+        }
+
+        .fallback-link:hover {
+            background-color: #f5c6cb;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <h1>Встраиваемый контент</h1>
+    
+
+
+
+    <div class="demo-block">
+        <h2> Демонстрация добавления встроенного фрейма (iframe)</h2>
+        <figure>
+            <iframe src="https://vkvideo.ru/video_ext.php?oid=-202869502&id=456239024&hd=2&autoplay=0"
+                width="800" height="450" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;"
+                frameborder="0" allowfullscreen title="Встроенное видео VK"></iframe>
+            
+
+        <figure>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=36.063909%2C52.951255&mode=search&oid=1030860442&ol=biz&z=17"
+                width="800" height="450" frameborder="0" allowfullscreen="true" style="border:1px solid #ccc;" title="Яндекс.Карты: Орел"></iframe>
+            
+    </div>
+    <div class="demo-block">
+       
+
+
+
+    <div class="demo-block">
+        <h2> Демонстрация добавления на страницу видео </h2>
+        <figure>
+            
+            <video width="800" controls poster="iframes/2026-04-10_14-47-05.png"
+                   preload="metadata">
+                <source src="iframes/oreluniver.mp4" type="video/mp4">
+                Ваш браузер не поддерживает тег video. <a href="oreluniver.mp4">Скачайте видео</a>.
+            </video>
+            
+
+    </div>
+
+
+	
+
+    <div class="demo-block">
+        <h2> Демонстрация добавления на страницу аудио</h2>
+        <figure>
+            
+            <audio controls preload="metadata" style="width: 100%; max-width: 600px;">
+                <source src="iframes\yuriy-gagarin-poehali.ogg" type="audio/mpeg">
+                <source src="C:\Users\User\Desktop\kotovadasha210-ui.github.io\lab2\iframes\YUrijj_Gagarin_-_Poekhali_12_aprelya_1961_66839411.mp3" type="audio/ogg">
+               </a>
+            </audio>
+            
+       
+    </div>
+
+
+
+        <h2> Демонстрация добавления PDF на страницу</h2>
+        <figure>
+            <object data="https://oreluniver.ru/public/file/brendbook/Oreluniver_BrandBook_20190412.pdf"
+                    type="application/pdf"
+                    width="100%"
+                    height="600px"
+                    style="border: 1px solid #ddd; border-radius: 8px;">
+                <div class="fallback-link">
+                    <strong> Не удалось отобразить PDF-файл в браузере.</strong><br>
+                    Возможно, ваше устройство или браузер не поддерживают встроенный просмотр PDF.<br>
+                     Вы можете скачать документ по прямой ссылке:
+                    <a href="https://oreluniver.ru/public/file/brendbook/Oreluniver_BrandBook_20190412.pdf" download>Скачать PDF-файл «Брендбук ОрелГУ»</a>
+                </div>
+            </object>
+       
+
+    <hr>
+    <footer style="font-size: 0.85rem; color: #666; margin-top: 2rem; border-top: 1px solid #eee; padding-top: 1rem;">
+        
+</body>
+
+</html>

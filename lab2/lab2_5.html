@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        td {
+            padding: 8px;
+            vertical-align: top;
+        }
+
+        td:first-child {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        td:last-child {
+            text-align: left;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .buttons {
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="file.php" method="POST">
+        <h2>Форма регистрации пользователя</h2>
+        <table>
+            <tr>
+                <td><label for="email">E-mail</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Введите e-mail" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="pass">Пароль</label></td>
+                <td><input type="password" id="pass" name="pass" placeholder="Введите пароль" required></td>
+            </tr>
+
+            <tr>
+                <td><span>Пол</span></td>
+                <td>
+                    <label><input type="radio" name="gender" value="m" > Мужчина</label>
+                    <label><input type="radio" name="gender" value="f" > Женщина</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="year">Год рождения</label></td>
+                <td>
+                    <select id="year" name="birth_year">
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                    </select> -й
+                </td>
+            </tr>
+
+            <tr>
+                <td><span>Я знаю</span></td>
+                <td>
+                    <label><input type="checkbox" checked disabled> Русский</label><br>
+                    <label><input type="checkbox"> Испанский</label><br>
+                    <label><input type="checkbox"> Немецкий</label><br>
+                    <label><input type="checkbox"> Английский</label><br>
+                    <label><input type="checkbox"> Китайский</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="about">Обо мне</label></td>
+                <td>
+                    <textarea id="about" name="about" placeholder="Напишите коротко о себе" rows="4" cols="30"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td class="buttons">
+                    <button type="submit">Готово</button>
+                    <button type="reset">Очистить</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
